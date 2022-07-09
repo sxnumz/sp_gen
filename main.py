@@ -1,5 +1,5 @@
 from colorama import Fore, init
-import threading, requests, random, string, ctypes, names, time, os, sys
+import threading, requests, random, string, ctypes, name, time, os, sys
 
 init()
 
@@ -54,7 +54,7 @@ def Creator():
       showgender = 'Male'
     else:
       showgender = 'Female'
-    name = f"{names.get_first_name(gender=gender)}{random.choice(string.digits)}{random.choice(string.digits)}{random.choice(string.digits)}{random.choice(string.digits)}"
+    name = f"{name.get_first_name(gender=gender)}{random.choice(string.digits)}{random.choice(string.digits)}{random.choice(string.digits)}{random.choice(string.digits)}"
     birth_day = random.randint(1, 28)
     birth_month = random.randint(1, 12)
     birth_year = random.randint(1980, 2002)
